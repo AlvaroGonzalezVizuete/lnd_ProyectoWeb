@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Raleway;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../Fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+body {background-color: #feffd4;
+background-image: linear-gradient(90deg, #feffd4, #fff8f8);}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin: 15px;
+    padding: 5px 20px;
+
+    border: solid 1px black;
+    border-radius: 3em;
+}
+nav h1{
+    display: inline;
+}
+nav img{
+    width: 5vw;
+
+}
+.nav_logo_and_title {
+    display: flex;
+    align-items: center;
+}
+.nav_links a{
+    padding: 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: black;
+}
+@keyframes nav_hover {
+    100%{
+        font-size: 1.4em;
+        font-weight: 600;
+    }
+}
+.nav_links a:hover{
+    animation-name: nav_hover;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.nav_contacto {
+    border: solid 2px black;
+    border-radius: 25px;
+    padding: 5px 15px;
+}
+@keyframes contacto_hover {
+    50%{
+        font-size: 1.2em;
+    }
+    65%{
+        background-color: rgb(230, 255, 255);
+    }
+    100%{
+        transform: rotate(-3deg);
+        font-size: 1.2em;
+        background-color: rgb(230, 255, 255);
+    }
+}
+.nav_contacto:hover {
+   animation: 0.5s contacto_hover forwards ease-in-out;
+}
+.nav_contacto a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4em;
+}
+
+header {
+    position: relative;
+    margin: auto;
+    height: 75vh;
+    width: 75vw;
+}
+video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    border-radius: 20px;
+}
+
+hr{
+    border: 1px solid rgb(62, 62, 62);
+    height: 1px;
+    width: 90%;
+    margin: auto;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+}
+footer li, footer ul{display: inline;}
+footer li{padding: 0px 15px;}
+footer a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+footer a:hover{text-decoration: underline;}
+footer a:active{font-weight: 500;}
+footer img{width: 3vw;}
+.footer_contacto{
+    display: inline;
+    border: solid 1px black;
+    border-radius: 25px;
+    padding: 5px 15px;
+}
+.footer_contacto a:hover {
+    text-decoration: none;
+    font-weight: 400;
+}
+.footer_contacto a:active{font-weight: 600;}
