@@ -80,15 +80,15 @@ nav img{
 header {
     position: relative;
     margin: auto;
-    height: 75vh;
-    width: 75vw;
+    width: 80vw;
 }
 video {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
+    width: auto;
     z-index: -1;
+    width: 100%;
     border-radius: 20px;
 }
 
