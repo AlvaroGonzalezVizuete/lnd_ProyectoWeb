@@ -99,6 +99,7 @@ header h1 {
     text-shadow: 0px 0px 10px rgb(0, 0, 0);
     font-style: italic;
     font-weight: 800;
+    text-align: center;
 }
 
 hr{
@@ -136,12 +137,46 @@ footer img{width: 3vw;}
 }
 .footer_contacto a:active{font-weight: 600;}
 
-@media (max-width: 600px) {
+@media (min-width: 670px) and (max-width:900px){
+    header h1{
+        font-size: 3em;
+    }
+    footer{
+        flex-direction: column-reverse;
+    }
+    footer img {
+        width: 10vw;
+        margin-top: 10px;
+    }
+    .nav_links{display: none;}
+    .nav_contacto{display: none;}
+}
+
+@media (max-width: 670px) {
     nav {
         margin: 3vw;
         text-align: center;
     }
-    .nav_links{
-        display: none;
+    .nav_links{display: none;}
+    .nav_contacto{display: none;}
+    nav img{width: 10vw;}
+    header h1{
+        font-size: 2.3em;
+    }
+
+    footer{
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    footer img{
+        width: 15vw;
+    }
+    footer ul{
+        text-align: center;
+    }
+    footer li{
+        display: block;
+        padding: 5px;
+        font-size: 1.2em;
     }
 }
