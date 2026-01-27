@@ -15,9 +15,9 @@
             <h1>TCMLL</h1>
         </div>
         <div class="nav_links">
-            <a href="">Información</a>
+            <a href="#informacion">Información</a>
             <a href="">Colaborar</a>
-            <a href="">Progreso</a>
+            <a href="#progreso">Progreso</a>
             <a href="">Enlaces</a>
         </div>
         <div class="nav_contacto"><a href="">Contacto</a></div>
@@ -27,20 +27,97 @@
             <div class="menu_icon_bar"></div>
         </div>
     </nav>
-    <!-- <img src="Images/tcmll_representation.png" alt="" style="width: 100%;"> -->
+
     <header>
         <h1>La próxima evolución del método Roux</h1>
         <video loop muted autoplay>
             <source src="Images/bg_video.mp4" type="video/mp4">
         </video>
     </header>
+
+    <hr>
+    <section id="informacion">
+        <h2>Información</h2>
+        <div id="informacion_content">
+            <div>
+                <p>
+                    <span class="first_word">Concepto: </span> TCMLL es una optimización del método Roux derivado de los métodos "ACMLL" que resuelve las dos 
+                    últimas piezas del segundo bloque y las esquinas de la capa superior (CMLL) con un mismo algoritmo. <br>
+                    Consta de 430 casos y todos los algoritmos están optimizados para la resolución con una mano (OH).
+                </p>
+                <p>
+                    <span class="first_word">Notación: </span> Los casos se dividen en sets del 0 al 5 y se diferencian por
+                    la orientación de las piezas del último par (siendo "TCMLL 0" el CMLL estándar). <br> Cuando están seguidos de una "a"
+                    se refiere al par frontal (1a, 2a, 3a, ...) y cuando están seguidos por una "b" se refieren al par trasero (1b, 2b, 3, ...). <br>
+                    Además, con una letra y un número adicional se especifíca el caso concreto, por ejemplo: TCMLL 1a-3B.
+                </p>
+                <p class="italic">
+                    Más información en la sección <a href="">enlaces</a>
+                </p>
+            </div>
+            <img src="Images/tcmll_notacion.png" alt="tcmll notacion">
+        </div>
+    </section>
+
+    <hr>
+    <section id="progreso">
+        <h2>Progreso</h2>
+        <h3>Desarrollo de TCMLL por sets</h3>
+        <table>
+            <tr>
+                <th rowspan="2">Set</th>
+                <td colspan="5">A</td>
+                <td colspan="5">B</td>
+            </tr>
+            <tr>
+                <td>1a</td>
+                <td>2a</td>
+                <td>3a</td>
+                <td>4a</td>
+                <td>5a</td>
+                <td>1b</td>
+                <td>2b</td>
+                <td>3b</td>
+                <td>4b</td>
+                <td>5b</td>
+            </tr>
+            <tr>
+                <th>% Descubierto</th>
+                <td class="p100">100%</td>
+                <td class="p100">100%</td>
+                <td class="p100">100%</td>
+                <td class="p100">100%</td>
+                <td class="p100">100%</td>
+                <td class="p100">100%</td>
+                <td class="p100">100%</td>
+                <td class="p100">100%</td>
+                <td class="p100">100%</td>
+                <td class="p0">0%</td>
+            </tr>
+            <tr>
+                <th>% Optimizado</th>
+                <td class="p100">100%</td>
+                <td class="p100">100%</td>
+                <td class="p88">88%</td>
+                <td class="p34">34%</td>
+                <td class="p23">23%</td>
+                <td class="p100">100%</td>
+                <td class="p100">100%</td>
+                <td class="p46">46%</td>
+                <td class="p9">9%</td>
+                <td class="p0">0%</td>
+            </tr>
+        </table>
+        <h3>Últimas soluciones descubiertas</h3>
+    </section>
+
     <hr>
     <footer>
         <img src="Images/tcmll_representation.png" alt="tcmll representation">
         <ul>
-            <li><a href="">Información</a></li>
+            <li><a href="#informacion">Información</a></li>
             <li><a href="">Colaborar</a></li>
-            <li><a href="">Progreso</a></li>
+            <li><a href="#progreso">Progreso</a></li>
             <li><a href="">Enlaces</a></li>
             <li><div class="footer_contacto"><a href="">Contacto</a></div></li>
         </ul>
