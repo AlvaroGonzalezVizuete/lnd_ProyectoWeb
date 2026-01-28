@@ -98,6 +98,7 @@ video {
     border-radius: 20px;
     border: solid black 2px;
     margin: auto;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
 header h1 {
     position: absolute;
@@ -135,6 +136,7 @@ h2 {
     margin-right: 10vw;
     border-radius: 20px;
     border: solid black 2px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
 #informacion p {
     margin: 5vh 7vw;
@@ -161,6 +163,8 @@ table {
     border-collapse: collapse;
     margin: auto;
     margin-bottom: 5vh;
+    background-color: white;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
 td, th {
     border: solid 1px black;
@@ -176,6 +180,55 @@ td, th {
 .p88 {color: rgb(140, 193, 140);}
 .p100 {color: green;}
 
+@keyframes fade-in {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+} 
+
+.gallery_item {
+    animation: fade-in 1s;
+    width: 25vw;
+    height: 40vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border: solid 1px black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+.gallery_item img {
+    width: 55%;
+}
+.gallery_item_text {
+    width: 45%;
+    text-align: center;
+    margin-right: 10px;
+}
+.gallery_item_text hr {
+    width: 80%;
+    margin: auto;
+}
+.gallery_item_text h4{
+    padding: 20px 0;
+    font-family: sans-serif;
+    font-size: 1.5em;
+}
+.gallery_item_text p {
+    padding: 15px 0;
+    font-family: monospace;
+    font-size: 1.5em;
+    color: rgb(91, 91, 91);
+    font-weight: bold;
+}
+
+.gallery_row {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4% 0;
+}
+#first_gallery_row {
+    margin-top: 0;
+}
 
 .small_separator{
     width: 90%;
