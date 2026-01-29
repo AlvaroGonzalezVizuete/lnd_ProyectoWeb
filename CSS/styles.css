@@ -167,6 +167,7 @@ table {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
 td, th {
+    font-size: 1em;
     border: solid 1px black;
     padding: 9px;
     text-align: center;
@@ -180,15 +181,12 @@ td, th {
 .p88 {color: rgb(140, 193, 140);}
 .p100 {color: green;}
 
-@keyframes fade-in {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-} 
-
 .gallery_item {
-    animation: fade-in 1s;
     width: 25vw;
     height: 40vh;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
     background-color: white;
     display: flex;
     align-items: center;
@@ -217,14 +215,13 @@ td, th {
     padding: 15px 0;
     font-family: monospace;
     font-size: 1.5em;
-    color: rgb(91, 91, 91);
+    color: rgb(114, 114, 114);
     font-weight: bold;
 }
 
-.gallery_row {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 4% 0;
+.gallery {
+    display: grid;
+    grid: auto / auto auto auto
 }
 #first_gallery_row {
     margin-top: 0;
@@ -295,9 +292,58 @@ footer img{width: 3vw;}
         height: 4px;
         width: 4vw;
     }
+    .gallery {
+        grid: auto / auto auto;
+    }
+    .gallery_item {
+        width: 40vw;
+        height: 90%;
+        flex-direction: column;
+    }
+    .gallery_item_text {
+        font-size: 0.95em;
+    }
+    .gallery_item img {
+        margin-top: 10px;
+    }
+    #informacion_content {
+        flex-direction: column;
+    }
+    #informacion_content img {
+        margin: auto;
+        width: 80vw;
+    }
+    td, th {
+        padding: 7px;
+    }
 }
 
 @media (max-width: 670px) {
+    td, th {
+        padding: 3px;
+        font-size: 1em;
+    }
+    .gallery {
+        grid: auto / auto auto;
+    }
+    .gallery_item {
+        width: 40vw;
+        height: 90%;
+        flex-direction: column;
+    }
+    .gallery_item_text {
+        font-size: 0.7em;
+    }
+    .gallery_item img {
+        margin-top: 10px;
+    }
+    #informacion_content {
+        flex-direction: column;
+    }
+    #informacion_content img {
+        margin: auto;
+        width: 80vw;
+    }
     nav {
         margin: 3vw;
         text-align: center;
@@ -339,5 +385,11 @@ footer img{width: 3vw;}
         display: block;
         padding: 5px;
         font-size: 1.2em;
+    }
+}
+@media (max-width:550px){
+    td, th {
+        padding: 1px;
+        font-size: 0.6em;
     }
 }
