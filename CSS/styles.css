@@ -11,6 +11,17 @@
 body {background-image: linear-gradient(90deg, #feffd4, #fff8f8);}
 
 
+@keyframes dark_hover {
+    100%{
+        background-color: rgb(47, 47, 47);
+        color: #fafbed;
+    }
+}
+@keyframes dark_hover_font {
+    100%{
+        color: #fafbed;;
+    }
+}
 
 nav {
     display: flex;
@@ -69,13 +80,16 @@ nav img{
         background-color: rgb(230, 255, 255);
     }
 }
-.nav_contacto:hover {
-   animation: 0.5s contacto_hover forwards ease-in-out;
-}
 .nav_contacto a{
     text-decoration: none;
     color: black;
     font-size: 1.4em;
+}
+.nav_contacto:hover {
+   animation: 0.5s dark_hover forwards;
+}
+.nav_contacto a:hover {
+    animation: 0.5s dark_hover_font  forwards;
 }
 .menu_icon{
     display: none;
@@ -266,14 +280,8 @@ td, th {
     border: solid 1px black;
     text-align: left;
 }
-@keyframes colaborar_hover {
-    100%{
-        background-color: rgb(47, 47, 47);
-        color: #fafbed;
-    }
-}
 .colaborar_element:hover {
-    animation: colaborar_hover 0.5s forwards;
+    animation: dark_hover 0.5s forwards;
 }
 .colaborar_element h3 {
     text-align: left;
@@ -282,6 +290,35 @@ td, th {
 .colaborar_element p {
     margin: 10px;
     margin-top: 2px;
+}
+
+#enlaces h2 {
+    margin-top: 15px;
+}
+.enlaces_container {
+    display: flex;
+    justify-content: center;
+}
+.enlaces_element {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 15px;
+    margin: 15px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+.enlaces_element:hover {
+    animation: dark_hover 0.5s forwards;
+}
+.enlaces_element a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+.enlaces_element img {
+    height: 10vh;
+    padding: 10px;
 }
 
 .small_separator{
