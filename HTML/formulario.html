@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="tcmll, roux, rubik's cube">
+    <meta name="author" content="Álvaro González Vizuete">
+    <title>TCMLL</title>
+    <link rel="icon" type="image/x-icon" href="Images/tcmll_representation.png">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/formulario_styles.css">
+    <base href="../">
+</head>
+<body>
+    <nav>
+        <div class="nav_logo_and_title">
+            <img src="Images/tcmll_representation.png" alt="tcmll representation">
+            <h1>TCMLL</h1>
+        </div>
+        <div class="nav_links">
+            <a href="#informacion">Información</a>
+            <a href="#progreso">Progreso</a>
+            <a href="#colaborar">Colaborar</a>
+            <a href="#enlaces">Enlaces</a>
+        </div>
+        <a href="HTML/formulario.html" target="_blank">
+            <div class="nav_contacto">
+                <p>Contacto</p>
+            </div>
+        </a>
+        
+        <div class="menu_icon">
+            <div class="menu_icon_bar"></div>
+            <div class="menu_icon_bar"></div>
+            <div class="menu_icon_bar"></div>
+        </div>
+    </nav>
+    <h1 class="title">Formulario de contacto</h1>
+    <form>
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name" placeholder="Alvaro">
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="alvaro@tcmll.com">
+
+        <label for="motivo">Motivo del mensaje</label>
+        <select id="motivo" name="motivo">
+            <option value="consulta">Consulta</option>
+            <option value="colaborar">Interés en colaborar</option>
+            <option value="otro">Otro</option>
+        </select>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea name="mensaje" id="mensaje" placeholder="Escriba aquí su mensaje"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

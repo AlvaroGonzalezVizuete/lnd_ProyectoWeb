@@ -11,18 +11,6 @@
 body {background-image: linear-gradient(90deg, #feffd4, #fff8f8);}
 
 
-@keyframes dark_hover {
-    100%{
-        background-color: rgb(47, 47, 47);
-        color: #fafbed;
-    }
-}
-@keyframes dark_hover_font {
-    100%{
-        color: #fafbed;;
-    }
-}
-
 nav {
     display: flex;
     align-items: center;
@@ -67,34 +55,25 @@ nav img{
     border-radius: 25px;
     padding: 5px 15px;
 }
-@keyframes contacto_hover {
-    50%{
-        font-size: 1.2em;
-    }
-    65%{
-        background-color: rgb(230, 255, 255);
-    }
-    100%{
-        transform: rotate(-3deg);
-        font-size: 1.2em;
-        background-color: rgb(230, 255, 255);
-    }
-}
-.nav_contacto a{
-    text-decoration: none;
-    color: black;
+.nav_contacto p{
     font-size: 1.4em;
 }
-.nav_contacto:hover {
-   animation: 0.5s dark_hover forwards;
+a {
+    text-decoration: none;
+    color: black;
 }
-.nav_contacto a:hover {
-    animation: 0.5s dark_hover_font  forwards;
+@keyframes dark_hover {
+    100%{
+        background-color: rgb(47, 47, 47);
+        color: #fafbed;
+    }
+}
+.nav_contacto:hover {
+    animation: 0.5s dark_hover forwards;
 }
 .menu_icon{
     display: none;
 }
-
 
 
 header {
@@ -144,6 +123,9 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+#informacion h2 {
+    margin-bottom: 3vh;
 }
 #informacion img {
     width: 40vw;
@@ -267,6 +249,9 @@ td, th {
     width: 48%;
     border-radius: 15px;
     border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .colaborar_img img {
     width: 80%;
@@ -302,19 +287,18 @@ td, th {
 .enlaces_element {
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: white;
     border: solid 1px black;
     border-radius: 15px;
     margin: 15px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    margin-left: 10px;
+    color: black;
+    padding-left: 10px;
 }
 .enlaces_element:hover {
     animation: dark_hover 0.5s forwards;
-}
-.enlaces_element a {
-    margin-left: 10px;
-    text-decoration: none;
-    color: black;
 }
 .enlaces_element img {
     height: 10vh;
@@ -413,6 +397,19 @@ footer img{width: 3vw;}
 }
 
 @media (max-width: 670px) {
+    .enlaces_container {
+        flex-direction: column;
+    }
+    .colaborar_img {
+        display: none;
+    }
+    .colaborar_options {
+        width: 80%;
+    }
+    .colaborar_element {
+        font-size: 0.9em;
+        padding: 15px;
+    }
     td, th {
         padding: 3px;
         font-size: 1em;
@@ -433,6 +430,7 @@ footer img{width: 3vw;}
     }
     #informacion_content {
         flex-direction: column;
+        font-size: 0.9em;
     }
     #informacion_content img {
         margin: auto;

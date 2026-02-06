@@ -1,0 +1,55 @@
+.title {
+    text-align: center;
+    margin: 5vh 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input, label, select, textarea, button {
+    margin: auto;
+    width: 50%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+input, select, textarea, button {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+}
+input::placeholder, textarea::placeholder, select {
+    padding-left: 10px;
+}
+textarea {
+    resize: none;
+    width: 50vw;
+    height: 30vh;
+}
+button {
+    margin-top: 4vh;
+    width: 5%;
+}
+label {
+    padding-bottom: 5px;
+    padding-top: 2vh;
+}
+
+@media (min-width: 670px) and (max-width:900px) {
+    input, label, select, textarea, button {
+        margin: auto;
+        width: 70%;
+    }
+    button {
+        margin-top: 4vh;
+        width: 40%;
+    }
+}
+@media (max-width: 670px) {
+    input, label, select, textarea, button {
+        margin: auto;
+        width: 80%;
+    }
+    button {
+        margin-top: 4vh;
+        width: 50%;
+    }
+}
