@@ -50,7 +50,7 @@ nav img{
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
-.nav_contacto {
+.nav_contacto, .responsive_contacto{
     border: solid 2px black;
     border-radius: 25px;
     padding: 5px 15px;
@@ -73,6 +73,19 @@ a {
 }
 .menu_icon{
     display: none;
+}
+
+#responsive_nav {
+    display: none;
+}
+#responsive_nav_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3em;
+}
+#responsive_nav_content a{
+    padding: 10px;
 }
 
 
@@ -173,7 +186,7 @@ td, th {
 .p9 {color: rgb(251, 105, 105)}
 .p23{color: rgb(253, 141, 76);}
 .p34{color: rgb(253, 182, 76);}
-.p46{color: rgb(253, 215, 76);}
+.p46{color: rgb(246, 233, 48);}
 .p88 {color: rgb(140, 193, 140);}
 .p100 {color: green;}
 

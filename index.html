@@ -8,13 +8,16 @@
     <title>TCMLL</title>
     <link rel="icon" type="image/x-icon" href="Images/tcmll_representation.png">
     <link rel="stylesheet" href="CSS/styles.css">
+    <script src="JS/script.js"></script>
 </head>
 <body>
     <nav>
-        <div class="nav_logo_and_title">
+        <a href="index.html">
+            <div class="nav_logo_and_title">
             <img src="Images/tcmll_representation.png" alt="tcmll representation">
             <h1>TCMLL</h1>
-        </div>
+            </div>
+        </a>
         <div class="nav_links">
             <a href="#informacion">Información</a>
             <a href="#progreso">Progreso</a>
@@ -27,12 +30,25 @@
             </div>
         </a>
         
-        <div class="menu_icon">
+        <div class="menu_icon" onclick="display_menu()">
             <div class="menu_icon_bar"></div>
             <div class="menu_icon_bar"></div>
             <div class="menu_icon_bar"></div>
         </div>
     </nav>
+    <div id="responsive_nav">
+        <div id="responsive_nav_content">
+            <a href="#informacion">Información</a>
+            <a href="#progreso">Progreso</a>
+            <a href="#colaborar">Colaborar</a>
+            <a href="#enlaces">Enlaces</a>
+            <a href="HTML/formulario.html" target="_blank">
+                <div class="responsive_contacto">
+                    <p>Contacto</p>
+                </div>
+            </a>
+        </div>
+    </div>
 
     <header>
         <h1>La próxima evolución del método Roux</h1>
@@ -226,7 +242,9 @@
 
     <hr>
     <footer>
-        <img src="Images/tcmll_representation.png" alt="tcmll representation">
+        <a href="index.html">
+            <img src="Images/tcmll_representation.png" alt="tcmll representation">
+        </a>
         <ul>
             <li><a href="#informacion">Información</a></li>
             <li><a href="#progreso">Progreso</a></li>
