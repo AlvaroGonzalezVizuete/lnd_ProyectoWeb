@@ -197,11 +197,15 @@ td, th {
     margin-top: 5%;
     margin-bottom: 5%;
     background-color: white;
-    display: flex;
-    align-items: center;
     border: solid 1px black;
     border-radius: 20px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+}
+.front_card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 .gallery_item img {
     width: 55%;
@@ -237,6 +241,9 @@ td, th {
 }
 #first_gallery_row {
     margin-top: 0;
+}
+.gallery_item_back {
+    text-align: center;
 }
 
 #colaborar {
@@ -436,7 +443,7 @@ footer img{width: 3vw;}
         flex-direction: column;
     }
     .gallery_item_text {
-        font-size: 0.7em;
+        font-size: 0.6em;
     }
     .gallery_item img {
         margin-top: 10px;
