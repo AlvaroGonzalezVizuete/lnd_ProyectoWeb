@@ -207,6 +207,10 @@ td, th {
     display: flex;
     align-items: center;
 }
+.back_card {
+    display: none;
+    text-align: center;
+}
 .gallery_item img {
     width: 55%;
 }

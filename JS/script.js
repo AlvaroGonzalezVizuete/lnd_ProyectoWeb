@@ -8,10 +8,14 @@ function display_menu() {
     }
 }
 function flip_card(i) {
-    const element = document.getElementsByClassName("front_card");
-    element[i].style.display = "none";
+    const front = document.getElementsByClassName("front_card");
+    const back = document.getElementsByClassName("back_card");
+    front[i].style.display = "none";
+    back[i].style.display = "block"
 }
 function unflip_card(i) {
-    const element = document.getElementsByClassName("front_card");
-    element[i].style.display = "flex";
+    const front = document.getElementsByClassName("front_card");
+    const back = document.getElementsByClassName("back_card");
+    front[i].style.display = "flex";
+    back[i].style.display = "none"
 }
