@@ -56,7 +56,7 @@
             <source src="Images/bg_video.mp4" type="video/mp4">
         </video>
     </header>
-
+<!--Animacion, gif, checkbox-->
     <hr>
     <section id="informacion">
         <h2>Información</h2>
@@ -77,7 +77,10 @@
                     Más información en la sección <a href="#enlaces">enlaces</a>
                 </p>
             </div>
-            <img src="Images/tcmll_notacion.png" alt="tcmll notacion">
+            <figure>
+                <img src="Images/tcmll_notacion.png" alt="tcmll notacion">
+                <figcaption>Notación TCMLL</figcaption>
+            </figure>
         </div>
     </section>
 
@@ -134,7 +137,7 @@
         
         <h3>Últimas soluciones descubiertas</h3>
         <div class="gallery">
-                <div class="gallery_item" onmouseover="flip_card(0)" onmouseleave="unflip_card(0)">
+                <div class="gallery_item" onclick="flip_card(0)" onmouseleave="unflip_card(0)">
                     <div class="front_card">
                         <img src="Images/gallery1.png" alt="tcmll33">
                         <div class="gallery_item_text">
@@ -144,11 +147,10 @@
                         </div>
                     </div>
                     <div class="back_card">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, eligendi doloremque ex eius dolorem, ducimus nisi veritatis reprehenderit laborum aliquid natus, aliquam in quod voluptatum eaque necessitatibus. Mollitia, magnam incidunt!
+                        Descubierto por: Cordelia Hu
                     </div>
-                    
                 </div>
-                <div class="gallery_item" onmouseover="flip_card(1)" onmouseleave="unflip_card(1)">
+                <div class="gallery_item" onclick="flip_card(1)" onmouseleave="unflip_card(1)">
                     <div class="front_card">
                         <img src="Images/gallery2.png" alt="tcmll33">
                         <div class="gallery_item_text">
@@ -157,9 +159,11 @@
                             <p>R2 U R' U' R' U2 F R F' R'</p>
                         </div>
                     </div>
-                    
+                    <div class="back_card">
+                        Descubierto por: Cordelia Hu y Tyler Gee
+                    </div>
                 </div>
-                <div class="gallery_item" onmouseover="flip_card(2)" onmouseleave="unflip_card(2)">
+                <div class="gallery_item" onclick="flip_card(2)" onmouseleave="unflip_card(2)">
                     <div class="front_card">
                         <img src="Images/gallery3.png" alt="tcmll33">
                         <div class="gallery_item_text">
@@ -168,8 +172,11 @@
                             <p>F' U F U r U2 M U R'</p>
                         </div>
                     </div>
+                    <div class="back_card">
+                        Descubierto por: Cordelia Hu y Tery McAcy
+                    </div>
                 </div>
-                <div class="gallery_item" onmouseover="flip_card(3)" onmouseleave="unflip_card(3)">
+                <div class="gallery_item" onclick="flip_card(3)" onmouseleave="unflip_card(3)">
                     <div class="front_card">
                         <img src="Images/gallery4.png" alt="tcmll33">
                         <div class="gallery_item_text">
@@ -178,8 +185,11 @@
                             <p>(U2) R F U' r' U' M' U' R U F' R'</p>
                         </div>
                     </div>
+                    <div class="back_card">
+                        Descubierto por: Tyler Gee
+                    </div>
                 </div>
-                <div class="gallery_item" onmouseover="flip_card(4)" onmouseleave="unflip_card(4)">
+                <div class="gallery_item" onclick="flip_card(4)" onmouseleave="unflip_card(4)">
                     <div class="front_card">
                         <img src="Images/gallery5.png" alt="tcmll33">
                         <div class="gallery_item_text">
@@ -188,8 +198,11 @@
                             <p>(U') R U' f R U R' U' R f' R' U' R U' R'</p>
                         </div>
                     </div>
+                    <div class="back_card">
+                        Descubierto por: Reuel Franz
+                    </div>
                 </div>
-                <div class="gallery_item" onmouseover="flip_card(5)" onmouseleave="unflip_card(5)">
+                <div class="gallery_item" onclick="flip_card(5)" onmouseleave="unflip_card(5)">
                     <div class="front_card">
                         <img src="Images/gallery6.png" alt="tcmll33">
                         <div class="gallery_item_text">
@@ -198,6 +211,64 @@
                             <p>R U' R' U2 R' F R F' R U' R' U' R U R'</p>
                         </div>
                     </div>
+                    <div class="back_card">
+                        Descubierto por: Cordelia Hu <br>
+                        Optimizado por: Tery McAcy
+                    </div>
+                </div>
+                <div class="gallery_item" onclick="flip_card(6)" onmouseleave="unflip_card(6)">
+                    <div class="front_card">
+                        <img src="Images/gallery7.png" alt="tcmll33">
+                        <div class="gallery_item_text">
+                            <h4>TCMLL 3a-L3</h4>
+                            <hr>
+                            <p>(U) R' U r' U f R f' r U2 R U R</p>
+                        </div>
+                    </div>
+                    <div class="back_card">
+                        Descubierto por: Cordelia Hu <br>
+                        Filtrado por: Álvaro González Vizuete
+                    </div>
+                </div>
+                <div class="gallery_item" onclick="flip_card(7)" onmouseleave="unflip_card(7)">
+                    <div class="front_card">
+                        <img src="Images/gallery8.png" alt="tcmll33">
+                        <div class="gallery_item_text">
+                            <h4>TCMLL 3a-L5</h4>
+                            <hr>
+                            <p>(U') R U2 R' U R U2 R' U F' U' F</p>
+                        </div>
+                    </div>
+                    <div class="back_card">
+                        Descubierto por: Cordelia Hu <br>
+                        Filtrado por: Álvaro González Vizuete
+                    </div>
+                </div>
+                <div class="gallery_item" onclick="flip_card(8)" onmouseleave="unflip_card(8)">
+                    <div class="front_card">
+                        <img src="Images/gallery9.png" alt="tcmll33">
+                        <div class="gallery_item_text">
+                            <h4>TCMLL 3a-S2</h4>
+                            <hr>
+                            <p>(U2) R f U R U' R2 f' U R' U' R U R'</p>
+                        </div>
+                    </div>
+                    <div class="back_card">
+                        Descubierto por: Cordelia Hu
+                    </div>
+                </div>
+                <div class="gallery_item" onclick="flip_card(9)" onmouseleave="unflip_card(9)">
+                    <div class="front_card">
+                        <img src="Images/gallery10.png" alt="tcmll33">
+                        <div class="gallery_item_text">
+                            <h4>TCMLL 3a-S3</h4>
+                            <hr>
+                            <p>(U2) R U' R' U' F' U R' U2 R U R' U R U2 F</p>
+                        </div>
+                    </div>
+                    <div class="back_card">
+                        Descubierto por: Cordelia Hu
+                    </div>
                 </div>
         </div>
     </section>
@@ -205,28 +276,28 @@
     <hr>
     <section id="colaborar">
         <h2>Colaborar</h2>
-        <h4>Existen cuatro formas principales en las que cualquiera puede contribuir al desarrollo de TCMLL</h4>
+        <h3>Existen cuatro formas principales en las que cualquiera puede contribuir al desarrollo de TCMLL</h3>
         <div id="colaborar_container">
             <div class="colaborar_options">
-                <div class="colaborar_element">
+                <div class="colaborar_element" onmouseenter="change_image(1)" onmouseleave="reset_animation()">
                     <h3>Generación</h3>
                     <p>Utilizamos el programa "batch solver" para generar soluciones de nuevos casos. A pesar de que batch solver genere soluciones en masa y la mayoría tiendan a no ser muy buenas este siempre es el primer paso.</p>
                 </div>
-                <div class="colaborar_element">
+                <div class="colaborar_element" onmouseenter="change_image(2)" onmouseleave="reset_animation()">
                     <h3>Filtrado</h3>
                     <p>Filtrar consiste en probar las soluciones generadas por batch solver una a una para encontrar las mejores opciones. Obteniendo así las primeras soluciones "usables" de un determinado caso.</p>
                 </div>
-                <div class="colaborar_element">
+                <div class="colaborar_element" onmouseenter="change_image(3)" onmouseleave="reset_animation()">
                     <h3>Optimización</h3>
                     <p>Experimentar, probar y utilizar distintos sets de movimientos para obtener la mejor solución posible para un determinado caso. Este es el último paso en la creación de un algoritmo de TCMLL.</p>
                 </div>
-                <div class="colaborar_element">
+                <div class="colaborar_element" onmouseenter="change_image(4)" onmouseleave="reset_animation()">
                     <h3>Testeo</h3>
                     <p>Probar casos ya generados para opinar, dar feedback y sugerir fingertricks. Para desempeñar este rol no hace falta conocimiento técnico pero sí experiencia y habilidad en la resolución.</p>
                 </div>
             </div>
             <div class="colaborar_img">
-                <img src="Images/gallery1.png" alt="">
+                <img src="Images/colaborar1.png" alt="batch solver" id="img_colaborar">
             </div>
         </div>
 
