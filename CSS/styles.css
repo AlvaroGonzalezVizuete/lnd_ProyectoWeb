@@ -24,9 +24,13 @@ nav {
 nav h1{
     display: inline;
 }
+@keyframes logo {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
 nav img{
+    animation: logo 1s forwards;
     width: 5vw;
-
 }
 .nav_logo_and_title {
     display: flex;
@@ -64,7 +68,7 @@ a {
 }
 @keyframes dark_hover {
     100%{
-        background-color: rgb(47, 47, 47);
+        background-color: rgb(62, 62, 62);
         color: #fafbed;
     }
 }
@@ -106,7 +110,12 @@ video {
     margin: auto;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
+@keyframes title {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+}
 header h1 {
+    animation: title 1s forwards;
     position: absolute;
     color: #ffffff;
     font-size: 3.2em;
@@ -119,7 +128,7 @@ header h1 {
 
 
 hr {
-    border: 1px solid rgb(62, 62, 62);
+    border: 1px solid rgb(175, 175, 175);
     height: 1px;
     width: 100%;   
 }
@@ -223,7 +232,7 @@ td, th {
     width: 55%;
 }
 .gallery_item:hover {
-    opacity: 0.7;
+    animation: dark_hover 0.5s forwards;
 }
 .gallery_item_text {
     width: 45%;
@@ -243,7 +252,7 @@ td, th {
     padding: 15px 0;
     font-family: monospace;
     font-size: 1.5em;
-    color: rgb(114, 114, 114);
+    color: rgb(132, 132, 132);
     font-weight: bold;
 }
 
