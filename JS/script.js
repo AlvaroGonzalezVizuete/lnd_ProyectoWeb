@@ -41,8 +41,8 @@ function change_image(i) {
         element.setAttribute("alt", "optimization")
     }
     else if(i == 4) {
-        element.setAttribute("src", "Images/colaborar4.png")
-        element.setAttribute("alt", "feedback")
+        element.setAttribute("src", "Images/gallery4.png")
+        element.setAttribute("alt", "testing")
     }
     element.classList.add("fade_animation");
 }
